@@ -1,0 +1,198 @@
+body
+{
+ max-width: 100%;
+}
+
+header
+{
+ background-color: white;
+ display: flex;
+ flex-basis: 100%;
+ margin: .5em .5em  0 .5em;
+ 
+}
+
+h1
+{
+    font-size: 2em;
+    text-align: center;
+    padding: .5em;
+}
+
+
+.nav 
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(12,109,164);
+    color: white;
+    font-weight: bold;
+    flex-wrap: wrap;
+    
+}
+
+.nav li
+{
+    padding: 1em;
+    margin: 0;
+}
+
+nav ul
+{
+    display: flex;
+    width: 50%;
+}
+
+.option-one .sub-menu
+{
+    display: none;
+    background-color: yellow;
+    color: #fd5949;
+}
+
+.option-one:hover .sub-menu
+{
+    
+    display: flex;
+    width: 100%;
+    
+}
+main
+{
+background-color: tomato;
+
+}
+
+
+section
+{
+
+}
+
+/* Header */
+
+figure a img
+{
+    flex-grow: 0;
+}
+
+/*Icon social network*/
+.network-social
+{
+display: flex;
+align-items: flex-end;
+flex-wrap: wrap;
+flex-grow: 0;
+margin-left: 5%;
+
+}
+
+a.fab.fa-facebook-square, a.fab.fa-instagram, a.fab.fa-linkedin
+{
+font-size: 2rem;
+margin: .3em;
+text-decoration: none;
+color: black;
+}
+
+.fab.fa-facebook-square:hover
+{
+    color: #3b5998;
+    width: .9em;
+}
+.fab.fa-instagram:hover
+{
+    
+    border-radius: 10%;
+    width: .9em;
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fab.fa-linkedin:hover
+{
+    color: #0e76a8;
+    width: .9em;
+}
+
+/*Icon Whatsapp*/
+
+.whatsapp
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;  
+}
+
+.whatsapp img
+{
+    width: 60px;
+    height: 60px;
+    margin: 1em;
+}
+
+
+/*Caja-precios*/
+
+.box-precios
+{
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    margin: 0 1em 0 1em;
+    flex-wrap: wrap;
+    
+}
+
+/*in .box-precios -> /Precio*/
+
+.precio:nth-child(1n+1)
+{
+    background-color: chartreuse;
+    border-top: .5em solid black;
+    margin: .8em;
+    width: 30%;
+    display: flex;
+    flex-direction: column;  
+}
+
+/* in .box-precios -> Precio/Tarifa*/
+
+.tarifa
+{
+    border-bottom: .2em solid rgba(69, 73, 73);
+    vertical-align: top;
+}
+.tarifa h1
+{
+    text-align: center;
+    font-size: 1.5em;
+}
+.tarifa h2
+{
+    text-align: center;
+    font-size: 2.5em;
+    padding: .5em;
+}
+
+.tarifa h3
+{
+    text-align: center;
+    font-size: .8em;
+    padding: .5em;
+}
+
+button
+{
+    align-self: center;
+    margin-bottom: .5em;
+    
+}
+
+
+ul li
+{
+    margin: .5em;
+}
