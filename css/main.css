@@ -84,3 +84,65 @@ color: black;
     margin: 1em;
 }
 
+/* Barra Nav */
+
+.nav-base
+{
+    background-color: yellow;
+    width: 100%;
+    position: relative;
+}
+.nav-master
+{
+   
+}
+.nav-master > ul 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    column-gap: 0.5em;
+}
+
+.nav-master ul li
+{
+    background-color: tomato;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1em;   
+}
+
+a
+{
+    display: block;
+    text-decoration:none;
+}
+.subnav-content ul
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.subnav-content ul li
+{
+    background-color: yellowgreen;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+}
+.nav-master ul li:hover .subnav-content
+{
+    display: grid;
+    
+}
+
+.subnav-content
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%; 
+    width: 100%;
+}
+
+
