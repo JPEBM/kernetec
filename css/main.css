@@ -38,6 +38,15 @@ margin-left: 5%;
 
 }
 
+.fas.fa-code, .fas.fa-laptop, .fas.fa-user-secret, .fas.fa-wifi
+{
+    font-size: 2em;
+    margin-left: 5px;
+}
+.fas.fa-window-maximize
+{
+    font-size: 2em;  
+}
 a.fab.fa-facebook-square, a.fab.fa-instagram, a.fab.fa-linkedin
 {
 font-size: 2rem;
@@ -88,7 +97,7 @@ color: black;
 
 .nav-base
 {
-    background-color: yellow;
+    background-color: white;
     width: 100%;
     position: relative;
 }
@@ -100,23 +109,35 @@ color: black;
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    column-gap: 0.5em;
+    column-gap: 0.1em;
 }
 
 .nav-master ul li
 {
-    background-color: tomato;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 1em;   
+    background-color: rgb(14,112,177);
+    display: grid;    
+}
+.nav-master ul li a
+{
+    padding: 1em;
+    text-align: center;
+    text-decoration:none;
+    color: white; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
 }
 
-a
+
+
+.subnav-content ul li a
 {
-    display: block;
+    padding: 1.5em;
+    text-align: center;
     text-decoration:none;
+    color: white;
 }
+
+
 .subnav-content ul
 {
     display: grid;
@@ -124,15 +145,21 @@ a
 }
 .subnav-content ul li
 {
-    background-color: yellowgreen;
+    background-color: rgb(7, 90, 134);
     display: grid;
-    justify-content: center;
-    align-content: center;
-    padding: 1em;
+    
 }
+
+
 .nav-master ul li:hover .subnav-content
 {
     display: grid;
+    transition: all 5s;
+    
+}
+.nav-master ul li:hover 
+{
+    background-color:  rgb(7, 90, 134);
     
 }
 
@@ -145,4 +172,16 @@ a
     width: 100%;
 }
 
+.subnav-content ul li a span
+{
+    display: block;
+    margin-bottom: 0.4em;
+    
+}
 
+
+main
+{
+    background-color: violet;
+    min-height: 100vh;
+}
