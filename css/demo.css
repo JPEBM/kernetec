@@ -267,7 +267,7 @@
   }
   
   .fakeMenu {
-    width: 40%;
+    width: 60%;
     box-sizing: border-box;
     height: 12.5px;
     position: relative;
@@ -281,7 +281,7 @@
     background-color: #151515c4;
     position: relative;
     box-sizing: border-box;
-    width: 40%;
+    width: 60%;
     padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -290,7 +290,7 @@
   .fakeScreen p {
     position: relative;
     text-align: left;
-    font-size: .5em;
+    font-size: 1em;
     line-height: normal;
     font-family: monospace;
     white-space: normal;

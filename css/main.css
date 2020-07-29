@@ -525,13 +525,13 @@ color: black;
     }
     h1, .column-one h1, .column-two h1
     {
-        font-size: 1.1em;
+        font-size: 1.8em;
         
     }
-    
-    p, .column-one p, .column-two li, .column-three li
+   
+    p, .column-one p, .column-two li, .column-three li, .fas.fa-phone-alt, .number span p
     {
-        font-size: .7em;
+        font-size: 1.2em;
         line-height: 20px;
     }
     .nav-base
@@ -547,7 +547,7 @@ color: black;
     {
         display: grid;
         height: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(150px,.5fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px,.6fr));
     }
     .number:last-child
     {
@@ -557,13 +557,18 @@ color: black;
     {
         margin-bottom: -20px;
     }
+
+    .contact-number .number span.fas.fa-phone-alt, .contact-number .number span.far.fa-clock
+    {
+        font-size: 1em;
+    }
     .contact-number .number span p
     {
-        font-size: .5em;
+        font-size: .8em;
     }
     .fas.fa-phone-alt, .far.fa-clock
     {
-        font-size: 1em;
+        font-size: .8em;
     }
     
     .whatsapp
@@ -595,6 +600,19 @@ color: black;
     .button-info a span
     {
         text-align: center;
+    }
+
+    .button-remote.button-one a
+    {
+        padding: .8em 3em .8em 3em;
+    }
+    .our-clients
+    {
+        grid-template-rows: .4fr 1fr;
+    }
+    .clients-img
+    {
+        margin-bottom: 1em;
     }
 }
 
