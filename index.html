@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kernetec - Servicios Tecnologicos </title>
+    <script type="text/javascript" src="./script/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
-    
+    <link rel="stylesheet" href="./css/floating-wpp.css">
     <link rel="stylesheet" href="./css/demo.css">
     <link rel="stylesheet" href="./css/demo2.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./script/floating-wpp.js"></script>
     <script src="https://kit.fontawesome.com/07bedb1bda.js" crossorigin="anonymous"></script>
     
 </head>
@@ -20,14 +22,39 @@
                 <img src="./img/logo_228x123.jpg" alt="logo">
             </a>
         </div>
-    <div class="network-social">
+        <div class="network-social">
             <a href="" class="fab fa-facebook-square"></a>
             <a href="" class="fab fa-instagram"></a>
             <a href=""class="fab fa-linkedin"></a>
         </div>
-        <!---<div class="whatsapp">
+        <div class="contact-number">
+            <div class="number">
+                <span class="fas fa-phone-alt"></span>
+                <span>
+                      <p>CONTÁCTENOS</p>
+                      <p>937577968</p>
+                </span>
+            </div>
+            <div class="number">
+                <span class="far fa-clock"></span>
+                <span>
+                    <p>HORARIO REGULAR</p>
+                    <p>Lun-Vie: 09:00 - 18:00</p>
+                </span>
+                
+            </div>
+        </div>
+        <div id="myButton">
+        </div>
+        <div class="whatsapp">
                 <img src="./img/whatsapp-logo-3-1.png" alt="whatsapp">
-        </div> --->
+        </div>
+        <div class="button-info">
+           
+            <a href="#">
+                <span>SOLICITAR INFORMES</span>
+            </a>
+        </div>
     </header>
     <div class="nav-base">
             <nav class="nav-master">
@@ -84,28 +111,49 @@
                 </ul>
             </nav>
     </div>
-        <section class="slider">
-            <div class="slider-content">
-                <div class="slider-font">
+        <div class="slider-previo">
+            <div class="slider-font-responsive">
+                <div class=fakeMenu>
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                </div>
+                <div class="fakeScreen">
+                    <div class="line-master">
+                    <p class="line1">$ Hola bienvenido a Kernetec<span class="cursor1">_</span></p>
+                    <p class="line2">Te invitamos a consultar por nuestros servicios <span class="cursor2">_</span></p>
+                    <p class="line5">Tenemos tarifas especiales para tí <span class="cursor5">_</span></p>
+                    <p class="line3">[?] Estas interesado ? (Preciona nuestro boton de whatsapp)<span class="cursor3">_</span></p>
+                    <p class="line4">><span class="cursor4">_</span></p>
+                    </div>
+                </div>
+              
+
+
+            </div>
+            <section class="slider">
+             <div class="slider-content">
+                    <div class="slider-font">
                     
-                    <div class=fakeMenu>
-                        <div class="fakeButtons fakeClose"></div>
-                        <div class="fakeButtons fakeMinimize"></div>
-                        <div class="fakeButtons fakeZoom"></div>
-                      </div>
-                      <div class="fakeScreen">
-                        <p class="line1">$ Hola bienvenido a Kernetec<span class="cursor1">_</span></p>
-                        <p class="line2">Te invitamos a consultar por nuestros servicios <span class="cursor2">_</span></p>
-                        <p class="line5">Tenemos tarifas especiales para tí <span class="cursor5">_</span></p>
-                        <p class="line3">[?] Estas interesado ? (Preciona nuestro boton de whatsapp)<span class="cursor3">_</span></p>
-                        <p class="line4">><span class="cursor4">_</span></p>
-                      </div>
+                        <div class=fakeMenu>
+                            <div class="fakeButtons fakeClose"></div>
+                            <div class="fakeButtons fakeMinimize"></div>
+                            <div class="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div class="fakeScreen">
+                            <p class="line1">$ Hola bienvenido a Kernetec<span class="cursor1">_</span></p>
+                            <p class="line2">Te invitamos a consultar por nuestros servicios <span class="cursor2">_</span></p>
+                            <p class="line5">Tenemos tarifas especiales para tí <span class="cursor5">_</span></p>
+                            <p class="line3">[?] Estas interesado ? (Preciona nuestro boton de whatsapp)<span class="cursor3">_</span></p>
+                            <p class="line4">><span class="cursor4">_</span></p>
+                        </div>
                       
 
 
-                </div>
+                    </div>
             </div>
-        </section>
+            </section>
+        </div>
         <div class="box-02">
             
            
@@ -256,4 +304,19 @@
    
    
 </body>
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '+51 937 577 968',
+            popupMessage: 'Hola, en que podemos ayudarte?',
+            message: "Quiero solicitar informes",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Whatsapp (1)',
+            headerColor: '#075E54',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="./img/whatsapp/whatsapp.svg" />'
+        });
+    });
+</script>
 </html>

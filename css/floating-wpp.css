@@ -1,7 +1,7 @@
 .floating-wpp {
     position: fixed;
     bottom: 15px;
-    left: 15px;
+    right: 15px;
     font-size: 14px;
     transition: bottom 0.2s;
 }
@@ -24,6 +24,7 @@
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
+    border-radius: 50%;
 }
 
 .floating-wpp:hover {

@@ -237,3 +237,165 @@
         width: 100%;
     }
   }
+
+  @media screen and (min-width: 0px) and (max-width: 540px)
+   {
+
+  .fakeButtons {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    top: -2px;
+    left: px;
+    background-color: #ff3b47;
+    border-color: #9d252b;
+    display: inline-block;
+  }
+  
+  .fakeMinimize {
+    left: 5.5px;
+    background-color: #ffc100;
+    border-color: #9d802c;
+  }
+  
+  .fakeZoom {
+    left: 5.5px;
+    background-color: #00d742;
+    border-color: #049931;
+  }
+  
+  .fakeMenu {
+    width: 40%;
+    box-sizing: border-box;
+    height: 12.5px;
+    position: relative;
+    background-color: #bbb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  
+  .fakeScreen {
+    background-color: #151515c4;
+    position: relative;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .fakeScreen p {
+    position: relative;
+    text-align: left;
+    font-size: .5em;
+    line-height: normal;
+    font-family: monospace;
+    white-space: normal;
+    overflow: hidden;
+    width: 0;
+  }
+  
+  span {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+
+  @media screen and (min-width: 541px) and (max-width: 670px)
+   {
+
+    .fakeButtons {
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        position: relative;
+        top: -2px;
+        left: px;
+        background-color: #ff3b47;
+        border-color: #9d252b;
+        display: inline-block;
+      }
+      
+      .fakeMinimize {
+        left: 5.5px;
+        background-color: #ffc100;
+        border-color: #9d802c;
+      }
+      
+      .fakeZoom {
+        left: 5.5px;
+        background-color: #00d742;
+        border-color: #049931;
+      }
+      
+      .fakeMenu {
+        width: 40%;
+        box-sizing: border-box;
+        height: 12.5px;
+        position: relative;
+        background-color: #bbb;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      
+      
+      .fakeScreen {
+        background-color: #151515c4;
+        position: relative;
+        box-sizing: border-box;
+        width: 40%;
+        padding: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      
+      .fakeScreen p {
+        position: relative;
+        text-align: left;
+        font-size: .5em;
+        line-height: normal;
+        font-family: monospace;
+        white-space: normal;
+        overflow: hidden;
+        width: 0;
+      }
+      
+      span {
+        color: #fff;
+        font-weight: bold;
+      }
+    
+}
+@media screen and (min-width: 671px) and (max-width: 900px)
+{
+    .fakeScreen p {
+    
+        font-size: 1em;
+        font-family: monospace;
+        white-space: normal;
+        overflow: hidden;
+        width: 0;
+      }
+
+      .fakeMenu {
+        width: 50%;
+        box-sizing: border-box;
+        background-color: #bbb;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      
+      
+      .fakeScreen {
+        background-color: #151515c4;
+        box-sizing: border-box;
+        width: 50%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+}
